@@ -1,0 +1,404 @@
+html {
+  height: 100%;
+}
+
+.splash {
+
+  background: @black;
+  color: @white;
+  height: 100%;
+
+  .wrapper, #splsah--wrapper {
+    height: 100%;
+    position: relative;
+  }
+
+  a {
+    color: @white;
+  }
+
+  #head {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    z-index: 99;
+
+    nav {
+      a {
+
+        @media @mobile {
+          font-size: 9px;
+          letter-spacing: 1px;
+          font-weight: 200;
+          padding: 0 3px;
+          border: none;
+        }
+
+        @media @tablet {
+
+        font-weight: 600;
+        padding: 0 10px;
+        border-right: 1px solid @white25;
+        letter-spacing: 2px;
+        font-size: @font-size-xs;
+        color: @white50;
+
+        }
+
+        &:hover {
+          color: @white;
+        }
+        &:last-child {
+          border-right: none;
+        }
+
+
+
+      }
+    }
+
+  }
+
+  .absolute-center {
+    .center();
+    z-index: 99
+  }
+
+  #splash--video-overlay {
+    .cover();
+    z-index: 50;
+    background: @black50;
+  }
+
+  #splash--video {
+    .cover();
+    z-index: 49;
+    background-size: cover;
+    video {
+      background-size: cover;
+    }
+
+    @media @mobile {
+      background: url(/assets/img/lamm-bg-iphone.jpg) center center no-repeat;
+      background-size: cover;
+      video {
+        display: none;
+      }
+    }
+
+    @media @tablet {
+      background: url(/assets/img/lamm-bg-iphone.jpg) center center no-repeat;
+      background-size: cover;
+      video {
+        display: none;
+      }
+    }
+
+    @media @desktop {
+      background: @black50;
+      video {
+        display: block;
+      }
+    }
+
+    @media @max {
+      background: @black50;
+      video {
+        display: block;
+      }
+    }
+
+  }
+
+  #splash--meta {
+
+
+    @media @mobile {
+      width: 100%;
+    }
+
+    @media @tablet {
+      width: 100%;
+    }
+
+    @media @desktop {
+      width: 800px;
+    }
+
+    @media @max {
+      width: 800px;
+    }
+
+    h4 {
+
+
+      font-weight: 200;
+
+      @media @mobile {
+        font-size: @font-size-md;
+        margin: 0;
+      }
+
+      @media @desktop {
+        font-size: @font-size-lg;
+        margin: 10px 0 0;
+      }
+    }
+
+
+    p {
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: @white75;
+
+      @media @mobile {
+        font-size: @font-size-sm;
+      }
+
+      @media @tablet {
+        font-size: @font-size-md;
+      }
+
+      @media @desktop {
+        font-size: @font-size-md;
+      }
+
+      @media @max {
+        font-size: @font-size-md;
+      }
+
+    }
+
+    h1 {
+      margin: 0 auto;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      line-height: 80px;
+      height: 80px;
+      z-index: 100;
+      text-indent: -99999px;
+      background-position: center center;
+      background-repeat: no-repeat;
+
+      @media @mobile {
+        width: 90%;
+        background-image: url(/assets/img/lamm-3x.png);
+        background-size: contain;
+        height: 60px;
+      }
+
+      @media @tablet {
+        width: 90%;
+
+        background-image: url(/assets/img/lamm-4x.png);
+        background-size: contain;
+      }
+
+      @media @desktop {
+        background-image: url(/assets/img/lamm-3x.png);
+        background-size: contain;
+      }
+
+      @media @max {
+        background-image: url(/assets/img/lamm-3x.png);
+        background-size: contain;
+      }
+
+    }
+
+  }
+
+  #splash--handle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    color: @white;
+  }
+
+}
+
+#splash--signup {
+
+  z-index: 100;
+  background: @black50;
+  margin: auto;
+  display: block;
+
+  @media @mobile {
+    width: 90%;
+  }
+
+  @media @tablet {
+    width: 75%;
+  }
+
+  @media @desktop {
+    width: 600px;
+  }
+
+  @media @max {
+    width: 600px;
+  }
+
+  input {
+    color: @black;
+  }
+
+  .wrapper {
+    background: @black75;
+    padding: @spaced;
+    padding-top: 0px;
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+
+  .mfp-close {
+    color: @white;
+  }
+
+  h3 {
+    color: @white;
+    margin: 0;
+    padding: 15px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  form {
+
+    color: @white;
+
+    p {
+      color: @white;
+    }
+
+    label {
+      color: @black75;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-size: @font-size-xs;
+      display: none;
+    }
+    .email {
+      text-align: center;
+      width: 75%;
+      float: left;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .btn.epm-submit-chimp {
+      margin-bottom: 0;
+      width: 24%;
+      float: right;
+      height: 39px;
+      line-height: 39px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: @font-size-xs;
+      color: @white75;
+      border-color: @white25!important;
+      &:hover {
+        color: @white;
+        background: none;
+      }
+    }
+  }
+
+}
+
+
+.mfp-ready.content-page, #about {
+  height: 100%;
+  background: @black75;
+  .mfp-close {
+    color: @white;
+  }
+  #content {
+
+    @media @mobile {
+      font-size: 16px;
+    }
+
+    @media @desktop {
+      font-size: @font-size-md;
+    }
+    text-align: center;
+    line-height: 1.5;
+    p {
+      color: @white75;
+      line-height: inherit;
+    }
+  }
+}
+
+.vjs-control-bar {
+  display: none;
+}
+
+#brands {
+
+  border-top: 1px solid @white25;
+  text-transform: uppercase;
+  font-size: @font-size-sm;
+
+  @media @mobile {
+    margin-top: 20px;
+  }
+
+  @media @desktop {
+    margin-top: 60px;
+  }
+
+  letter-spacing: 2px;
+  .brand {
+    height: 50px;
+    line-height: 50px;
+    border-right: 1px solid @white25;
+     border-bottom: 1px solid @white25;
+
+     @media @mobile {
+   border-right: none;
+  }
+
+  @media @desktop {
+    border-right: 1px solid @white25;
+  }
+
+  }
+}
+
+#quotes {
+
+  @media @mobile {
+    border-top: 1px solid @white25;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 16px;
+  }
+
+  @media @desktop {
+    padding-top: 0;
+    margin-top: 0;
+    border-top: none;
+    border-left: 1px solid @white25;
+    font-size: 19px;
+  }
+
+  font-family: 'PT Serif', serif;
+
+  .quote {
+    padding: 0 25px;
+  }
+}

@@ -1,0 +1,61 @@
+/* @override http://theyachtclub.dev/x/wp-content/themes/splashtime/stylesheets/accordion.css */
+
+.accordion {
+  list-style-type: none;
+  padding: 0;
+}
+.accordion ul {
+  padding: 0;
+  margin: 0;
+  float: left;
+  display: block;
+  width: 100%;
+}
+.accordion li {
+  cursor: pointer;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #ddd;
+}
+.accordion li:last-child {
+  border-color: transparent;
+}
+.accordion li:before {
+  display: none;
+}
+.accordion li div {
+  display: block;
+  clear: both;
+  padding-bottom: 25px;
+  padding-left: 0;
+}
+.accordion li div p:first-child {
+  margin-top: 0;
+}
+.accordion li div p:last-child {
+  margin-bottom: 0;
+}
+.accordion a {
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+.accordion .title {
+  color: #1880ab;
+  font-size: 28px;
+  display: block;
+  height: 55px;
+  font-size: 20px;
+  line-height: 55px;
+  position: relative;
+}
+.accordion .title:hover:before {
+  color: #666;
+  transform: rotate(45deg);
+}
+.accordion .active .title:before {
+  transform: rotate(45deg);
+}

@@ -1,0 +1,112 @@
+.banner {
+
+  background-color: @blue;
+  background-size: cover;
+  background-position: center center;
+
+  @media @xs {
+    padding: @spaced*2 0 @spaced*1;
+  }
+
+  @media @tablet {
+    padding: @spaced*4 0 @spaced*3;
+  }
+
+  @media @desktop {
+    padding: @spaced*6 0 @spaced*5;
+  }
+
+
+  .title {
+
+    font-weight: 700;
+    margin: 0;
+    margin-left: -5px;
+    color: @white;
+    text-rendering: optimizelegibility;
+
+    small {
+      display: block;
+      color: @white;
+      font-size: 90%;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    @media @xs {
+      .font_size(40);
+      line-height: 1.2;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+      small {
+        .font_size(30);
+      }
+    }
+
+    @media @tablet {
+      .font_size(50);
+      line-height: 1.1;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+      small {
+        .font_size(40);
+      }
+    }
+
+    @media @desktop {
+      .font_size(75);
+      small {
+        .font_size(40);
+      }
+    }
+
+
+
+  }
+
+  .dates {
+
+    font-weight: 700;
+    color: @black50;
+    margin-bottom: @spaced;
+
+    @media @mobile {
+      .font_size(32);
+      line-height: 1.2;
+    }
+
+  }
+
+  .buttons {
+
+    .btn {
+      border-bottom: 0;
+      background: @black50;
+      color: @white;
+    }
+
+  }
+
+  &.overlayed {
+
+    position: relative;
+
+    > div {
+      position: relative;
+      z-index: 2;
+    }
+
+    &:after {
+      content: '';
+      .cover();
+      z-index: 1;
+      background: @black25;
+    }
+
+    .dates {
+      color: @white;
+    }
+
+  }
+
+}

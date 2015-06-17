@@ -1,0 +1,149 @@
+.description-section {
+
+  padding: @spaced*2 0;
+
+  a {
+    border-bottom: 1px solid;
+    color: @black;
+  }
+
+  p {
+    margin-bottom: 25px;
+  }
+
+}
+
+.tourney-section {
+
+  border-top: 1px solid @lighterGray;
+  padding: @spaced*2 0;
+
+  .section-title {
+    margin-bottom: 0;
+  }
+
+  .section-description {
+    margin-bottom: @spaced;
+  }
+
+
+
+}
+
+#details {
+
+  .font_size(14);
+  line-height: 1.5;
+
+
+  .item {
+
+    border-top: 1px solid @bgGray;
+    padding: @spaced*.5 0;
+    color: darken(@lightGray, 25%);
+
+    &:first-child {
+
+      border-top: 0;
+      padding-top: 0;
+
+    }
+
+    .title, a {
+      color: darken(@lightGray, 35%);
+    }
+
+    p {
+      color: inherit;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+  }
+
+}
+
+#tournament--gallery {
+  figure {
+
+    @media @min {
+      margin-bottom: 10px;
+    }
+
+    @media @tablet {
+      margin-bottom: 15px;
+    }
+
+    @media @desktop {
+      margin-bottom: 20px;
+    }
+
+  }
+}
+
+#tournament--sponsors {
+
+  .title-sponsor-section {
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    margin-bottom: @spaced*3
+  }
+
+  figure {
+
+    @media @min {
+      margin-bottom: 10px;
+    }
+
+    @media @tablet {
+      margin-bottom: 15px;
+    }
+
+    @media @desktop {
+      margin-bottom: 20px;
+    }
+
+  }
+}
+
+
+.share-button {
+
+  display: inline-block!important;
+  height: 60px!important;
+  line-height: 55px!important;
+
+  .social {
+    li {
+      color: @white;
+    }
+  }
+
+  label {
+
+    height: 60px!important;
+    line-height: 55px!important;
+    background: @blue!important;
+    color: @white;
+    border-radius: 2px!important;
+    padding: 10px!important;
+
+    &:before {
+      color: @white;
+    }
+
+    span {
+      color: @white;
+    }
+
+    i {
+      color: @white;
+    }
+
+  }
+
+}

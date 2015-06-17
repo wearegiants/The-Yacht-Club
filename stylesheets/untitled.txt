@@ -1,0 +1,26 @@
+@-webkit-keyframes things {
+	100% {
+		-webkit-transform: rotate(360deg);
+	};
+}
+
+header #anchor.spin {
+	-webkit-animation: things .75s infinite linear;
+	-moz-animation: things .75s infinite linear;
+	animation: things .75s infinite linear;
+}
+
+
+@-webkit-keyframes wiggle {
+	0% {-webkit-transform: rotate(4deg);}
+
+	50% {-webkit-transform: rotate(-4deg);}
+
+	100% {-webkit-transform: rotate(4deg);};
+}
+
+.item:hover .thumbnail {
+	-webkit-animation: wiggle 0.5s infinite;
+	-moz-animation: wiggle 0.5s infinite;
+	animation: wiggle 0.5s infinite;
+}

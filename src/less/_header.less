@@ -1,0 +1,45 @@
+#header {
+
+  z-index: 9;
+  background-color: darken(@blue, 35%);
+  background-image: url(/assets/img/header-bg.png);
+  background-size: contain;
+  background-position: center center;
+
+  a {
+
+    @btnheight: 75px;
+    display: inline-block;
+    height: @btnheight;
+    line-height: @btnheight;
+    color: @white;
+    text-transform: uppercase;
+
+    margin: 0 -2px;
+    font-weight: normal;
+    padding: 0 10px;
+    .font_size(13);
+    letter-spacing: 1px;
+
+    &#logo {
+
+      @logoHeight: 40px;
+
+      width: 100%;
+      background: url(/assets/img/eryc-cookie.png);
+      background-size: @logoHeight @logoHeight;
+      background-position: left center;
+      background-repeat: no-repeat;
+      padding-left: 50px;
+
+      @media @desktop {
+        border-right: 1px solid @white50;
+      }
+
+    }
+
+  }
+
+}
+
+

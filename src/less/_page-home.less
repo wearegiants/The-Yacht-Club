@@ -1,0 +1,397 @@
+#home--wrapper {
+
+  h2 {
+
+    margin-bottom: @spaced*1.25;
+
+  }
+
+}
+
+.testimonials {
+
+  .testimonial {
+
+    @media @xs {
+      padding: @spaced 0;
+      border-bottom: 1px solid @lighterGray;
+      text-align: left;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    @media @desktop {
+      text-align: center;
+      padding: 0;
+      border-bottom: none
+    }
+
+    img {
+
+      box-shadow: 0 0 15px rgba(0,0,0,.15);
+
+      @media @xs {
+        display: block;
+        float: left;
+        margin-right: @spaced;
+        width: 80px;
+        height: 80px;
+      }
+
+      @media @mobile {
+        width: 100px;
+        height: 100px;
+      }
+
+      @media @tablet {
+        width: 110px;
+        height: 110px;
+      }
+
+      @media @desktop {
+        width: auto;
+        height: auto;
+        display: block;
+        margin: 0 auto @spaced/2;
+        float: none;
+      }
+
+    }
+
+  }
+
+}
+
+#home--schedule {
+
+  position: relative;
+  z-index: 2;
+
+  @media @xs {
+    padding: @spaced*1.75 0;
+  }
+  @media @desktop {
+    padding: @spaced*2.25 0;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    margin-top: 0;
+    line-height: 1.3;
+    @media @xs {
+      br {
+        display: none;
+      }
+    }
+    @media @desktop {
+      br {
+        display: block;
+      }
+    }
+  }
+
+  .icon {
+
+    @media @xs {
+      width: 50px;
+      display: none;
+    }
+    @media @mobile {
+      width: 70px;
+      display: block;
+    }
+    @media @desktop {
+      width: 70px;
+    }
+
+  }
+
+}
+
+#home--physicians {
+
+  border-bottom: 10px solid @green;
+  box-shadow: 0 5px 10px rgba(0,0,0,.15);
+  position: relative;
+  z-index: 1;
+  background: url(/assets/img/physician-bg.jpg) center center no-repeat;
+  background-size: cover;
+
+
+  @media @xs {
+    padding: @spaced*1.75 0;
+  }
+  @media @desktop {
+    padding: @spaced*3.5 0;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  i {
+    color: @green;
+  }
+
+  ul {
+
+    margin-bottom: 0;
+    padding: 0;
+
+    li {
+
+      @media @xs {
+        display: block;
+        margin: 0;
+      }
+
+      &:before {
+        display: none;
+      }
+
+    }
+
+  }
+
+}
+
+#home--howitworks {
+
+  @media @xs {
+    padding-bottom: @spaced*3;
+  }
+
+  @media @mobile {
+
+    padding: @spaced*3 0;
+
+  }
+
+  .fs-cell {
+
+    @media @xs {
+      padding: @spaced 0;
+      text-align: left;
+      border-bottom: 1px solid @lighterGray;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    @media @tablet {
+      text-align: left;
+    }
+
+    @media @desktop {
+      padding: 0;
+      text-align: center;
+      border: none;
+    }
+
+  }
+
+  .icon {
+
+    @media @xs {
+      float: left;
+      margin-bottom: 00px;
+      margin-right: 10px;
+      margin-top: -8px;
+      width: 40px;
+    }
+
+    @media @tablet {
+      float: left;
+      margin-top: 0;
+      width: auto;
+      height: auto;
+      margin-right: @spaced;
+      margin-bottom: 0;
+    }
+
+    @media @desktop {
+      float: none;
+      margin-bottom: 20px;
+    }
+
+    img {
+
+      border-radius: 50%;
+      box-shadow: 0 0 15px rgba(0,0,0,.05);
+
+      @media @xs {
+        margin: auto;
+      }
+
+    }
+
+  }
+
+}
+
+#home--legality {
+
+  padding: @spaced*3 0;
+  border-top: 1px solid @lighterGray;
+
+
+
+}
+
+#home--testimonials {
+
+  padding: @spaced*1.75 0;
+  border-top: 1px solid @lighterGray;
+  border-bottom: 1px solid @lighterGray;
+
+}
+
+#home--checkicon {
+
+  height: 0px;
+  max-height: 0px;
+  position: relative;
+
+  .fs-cell {
+    position: relative;
+  }
+
+  .icon {
+
+    height: 95px;
+    width: 76px;
+
+    @media @xs {
+      left: 0%;
+      position: absolute;
+      top: 50%;
+      transform: translate( 0%, -50%);
+      left: 0;
+    }
+
+    @media @mobile {
+      left: 0%;
+      position: absolute;
+      top: 50%;
+      transform: translate( 0%, -50%);
+      left: 0;
+    }
+
+    @media @tablet {
+      left: 0%;
+      position: absolute;
+      top: 50%;
+      transform: translate( 0%, -50%);
+      left: 0;
+    }
+
+    @media @desktop {
+      .center();
+    }
+
+  }
+
+}
+
+#home--faq {
+
+  padding: @spaced*1.5 0;
+
+  h2 {
+
+    @media @xs {
+      margin-bottom: 15px;
+    }
+    @media @tablet {
+      margin-bottom: 15px;
+
+    }
+    @media @desktop {
+      margin-bottom: 20px;
+    }
+
+  }
+
+}
+
+
+.faq {
+
+  .faq-item {
+
+    h2 {
+
+      margin: 0;
+
+      @media @xs {
+        .font_size(18);
+      }
+
+      @media @tablet {
+        .font_size(20);
+      }
+
+      @media @desktop {
+        .font_size(22);
+      }
+
+    }
+
+    a {
+
+      color: @green;
+      border-bottom: 1px solid @green;
+
+    }
+
+  }
+
+}
+
+
+#home--banner {
+
+  .slide {
+
+    @media @xs {
+      padding: @spaced*4 0 @spaced;
+    }
+
+    @media @tablet {
+      padding: @spaced*5 0 @spaced*2;
+    }
+
+    @media @desktop {
+      padding: @spaced*7 0 @spaced*4;
+    }
+
+    color: @white;
+    p,h1,h2,h3,h4,h5,h6,a { color: inherit; }
+
+    h1,h2,h3,h4,h5,h6 {
+      font-family: @font-fam-subtitle;
+    }
+
+    .emphasized {
+      @media @xs {
+        .font_size(17);
+        line-height: 1.3;
+      }
+
+      @media @tablet {
+        .font_size(24);
+        display: block;
+      }
+
+      @media @desktop {
+         .font_size(24);
+      }
+    }
+
+    background-size: cover;
+    background-position: top center;
+
+  }
+
+}

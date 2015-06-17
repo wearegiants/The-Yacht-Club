@@ -1,0 +1,31 @@
+#faq-accordion {
+
+  .title {
+
+    display: block;
+    color: @blue;
+    border-bottom: transparent;
+    line-height: 1.4;
+    padding: @spaced/2 0;
+    .font_size(20);
+    border-top: 1px solid @lighterGray;
+
+    &.ui-accordion-header-active {
+      border-bottom: 1px solid transparent;
+      color: @blue;
+    }
+
+    &:hover {
+      color: darken(@blue, 10%);
+    }
+
+  }
+
+  .item {
+    border-bottom: 0;
+    p {
+      margin-bottom: 15px;
+    }
+  }
+
+}

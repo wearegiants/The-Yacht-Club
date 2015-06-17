@@ -1,0 +1,59 @@
+.page-subnav {
+
+  border-bottom: 1px solid rgba(0,0,0,.04);
+  box-shadow: 0 0 10px rgba(0,0,0,.04);
+
+  .btn {
+
+    margin-bottom: 0;
+    height: 60px;
+    line-height: 62px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: @textGray;
+
+    @media @min {
+      padding: 0 5px;
+    }
+
+    &:hover {
+      color: darken(@blue, 30%);
+    }
+
+    &:nth-child(2) {
+      padding-left: 0;
+    }
+
+    &.register {
+      background: RGBA(50, 171, 223, 1);
+      height: 40px;
+      line-height: 40px;
+      margin: 5px 0;
+      font-weight: 900;
+      color: @white!important;
+      display: none;
+    }
+
+  }
+
+  &.banner--clone {
+
+    .btn {
+      height: 40px;
+      line-height: 41px;
+
+      @media @min {
+        .font_size(10);
+        letter-spacing: 0;
+      }
+
+      @media @mobile {
+        .font_size(13);
+        letter-spacing: 1px;
+      }
+
+    }
+
+  }
+
+}
