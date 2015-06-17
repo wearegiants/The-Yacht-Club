@@ -25,9 +25,15 @@
 		<?php if ( has_post_thumbnail() ) { the_post_thumbnail('medium', array('class' => 'thumbnail')); } ?>
 	</div>
 	<div class="meta eleven columns alpha omega">
-		<h2><a href="<? the_field( "register_link" ); ?>" target="blank"><?php the_title(); ?></a></h2>
-		<a class="button" href="<? the_field( "register_link" ); ?>" target="blank">Click Here to Register</a>
-		<span class="date">Starts on <? the_field( "start_date" ); ?></span>
+		<?php if (get_field( "register_link" )): ?>
+		<h2><a href="<?php the_field( "register_link" ); ?>" target="blank"><?php the_title(); ?></a></h2>
+		<a class="button" href="<?php the_field( "register_link" ); ?>" target="blank">Click Here to Register</a>
+		<span class="date">Starts on <?php the_field( "start_date" ); ?></span>
+		<?php else: ?>
+		<h2><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h2>
+		<a class="button" href="<?php the_permalink(); ?>">Click Here to Register</a>
+		<span class="date"><?php the_field('season_dates'); ?></span>
+		<?php endif; ?>
 	</div>
 </div>
 <?php endwhile; ?>
