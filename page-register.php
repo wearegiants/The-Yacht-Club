@@ -12,7 +12,7 @@
 	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 		$loop = new WP_Query(array('post_type' => 'page',
 		'paged'            => $paged,
-		'posts_per_page'   => -1,
+		'posts_per_page'   => 999,
 		'post_parent'      => 407,
 		'order'            => 'ASC',
 		'orderby'          => 'title',
