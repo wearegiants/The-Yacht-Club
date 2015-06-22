@@ -20,8 +20,8 @@
 		'meta_query'       => array(
 			array(
 				'key'      => 'register_hide',
-				'value'    => '1',
-				'compare'  => '!='
+				'value'    => '0',
+				'compare'  => '=='
 			)
 		)
 	));
