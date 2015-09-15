@@ -3238,7 +3238,8 @@ h2 {
 }
 .btn,
 .button,
-button {
+button,
+input[type="submit"] {
   font-size: 12px;
   font-size: 0.75rem;
   font-family: "Montserrat", sans-serif;
@@ -3263,27 +3264,33 @@ button {
 .btn.btn-default,
 .button.btn-default,
 button.btn-default,
+input[type="submit"].btn-default,
 .btn.epm-submit-chimp,
 .button.epm-submit-chimp,
-button.epm-submit-chimp {
+button.epm-submit-chimp,
+input[type="submit"].epm-submit-chimp {
   background: none;
 }
 .btn.btn-default:hover,
 .button.btn-default:hover,
 button.btn-default:hover,
+input[type="submit"].btn-default:hover,
 .btn.epm-submit-chimp:hover,
 .button.epm-submit-chimp:hover,
-button.epm-submit-chimp:hover {
+button.epm-submit-chimp:hover,
+input[type="submit"].epm-submit-chimp:hover {
   background: #f2f2f2;
 }
 .btn.wide,
 .button.wide,
-button.wide {
+button.wide,
+input[type="submit"].wide {
   width: 100%;
 }
 .btn.btn-lg,
 .button.btn-lg,
-button.btn-lg {
+button.btn-lg,
+input[type="submit"].btn-lg {
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: 400;
@@ -3293,7 +3300,8 @@ button.btn-lg {
 }
 .btn.btn-sm,
 .button.btn-sm,
-button.btn-sm {
+button.btn-sm,
+input[type="submit"].btn-sm {
   font-size: 12px;
   font-size: 0.75rem;
   height: 44px;
@@ -3302,7 +3310,8 @@ button.btn-sm {
 }
 .btn.disabled,
 .button.disabled,
-button.disabled {
+button.disabled,
+input[type="submit"].disabled {
   background: #f2f2f2;
   color: #cbcbd2;
   box-shadow: inset 0 0 0 1px #e7e7ec;
@@ -3310,43 +3319,50 @@ button.disabled {
 }
 .btn.btn-link,
 .button.btn-link,
-button.btn-link {
+button.btn-link,
+input[type="submit"].btn-link {
   box-shadow: inset 0 0 2px transparent;
   text-decoration: underline;
 }
 .btn.btn-primary,
 .button.btn-primary,
-button.btn-primary {
+button.btn-primary,
+input[type="submit"].btn-primary {
   color: #ffffff;
   background: #666666;
 }
 .btn.btn-primary:hover,
 .button.btn-primary:hover,
-button.btn-primary:hover {
+button.btn-primary:hover,
+input[type="submit"].btn-primary:hover {
   background: #4d4d4d;
 }
 .btn.btn-danger,
 .button.btn-danger,
-button.btn-danger {
+button.btn-danger,
+input[type="submit"].btn-danger {
   color: #ffffff;
   background: #d64242;
 }
 .btn.btn-danger.btn-default,
 .button.btn-danger.btn-default,
-button.btn-danger.btn-default {
+button.btn-danger.btn-default,
+input[type="submit"].btn-danger.btn-default {
   color: #d64242;
   background: none;
   box-shadow: inset 0 0 0 1px #d64242;
 }
 .btn.btn-success,
 .button.btn-success,
-button.btn-success {
+button.btn-success,
+input[type="submit"].btn-success {
   color: #ffffff;
   background: #74c080;
 }
 .btn.btn-success.btn-default,
 .button.btn-success.btn-default,
-button.btn-success.btn-default {
+button.btn-success.btn-default,
+input[type="submit"].btn-success.btn-default {
   color: #74c080;
   background: none;
   box-shadow: inset 0 0 0 1px #74c080;
@@ -3354,9 +3370,11 @@ button.btn-success.btn-default {
 .btn.cta,
 .button.cta,
 button.cta,
+input[type="submit"].cta,
 .btn#gform_submit_button_1,
 .button#gform_submit_button_1,
-button#gform_submit_button_1 {
+button#gform_submit_button_1,
+input[type="submit"]#gform_submit_button_1 {
   background: #32b375;
   color: #ffffff;
   font-weight: normal;
@@ -3369,9 +3387,11 @@ button#gform_submit_button_1 {
 .btn.cta:hover,
 .button.cta:hover,
 button.cta:hover,
+input[type="submit"].cta:hover,
 .btn#gform_submit_button_1:hover,
 .button#gform_submit_button_1:hover,
-button#gform_submit_button_1:hover {
+button#gform_submit_button_1:hover,
+input[type="submit"]#gform_submit_button_1:hover {
   background: #2c9f68;
   border: 2px solid #299360;
 }
@@ -3379,9 +3399,11 @@ button#gform_submit_button_1:hover {
   .btn.cta,
   .button.cta,
   button.cta,
+  input[type="submit"].cta,
   .btn#gform_submit_button_1,
   .button#gform_submit_button_1,
-  button#gform_submit_button_1 {
+  button#gform_submit_button_1,
+  input[type="submit"]#gform_submit_button_1 {
     font-size: 13px;
     font-size: 0.8125rem;
     padding: 0;
@@ -3391,9 +3413,11 @@ button#gform_submit_button_1:hover {
   .btn.cta,
   .button.cta,
   button.cta,
+  input[type="submit"].cta,
   .btn#gform_submit_button_1,
   .button#gform_submit_button_1,
-  button#gform_submit_button_1 {
+  button#gform_submit_button_1,
+  input[type="submit"]#gform_submit_button_1 {
     font-size: 20px;
     font-size: 1.25rem;
     padding: 0 25px;
@@ -3403,9 +3427,11 @@ button#gform_submit_button_1:hover {
   .btn.cta,
   .button.cta,
   button.cta,
+  input[type="submit"].cta,
   .btn#gform_submit_button_1,
   .button#gform_submit_button_1,
-  button#gform_submit_button_1 {
+  button#gform_submit_button_1,
+  input[type="submit"]#gform_submit_button_1 {
     font-size: 20px;
     font-size: 1.25rem;
     padding: 0 25px;
