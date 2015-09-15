@@ -26,8 +26,10 @@
       </div>
       <div class="fs-cell fs-lg-7 fs-md-4 fs-sm-3 fs-right">
         <?php 
+          if ( ! post_password_required() ) {
           $shortcode = get_field('gravity_form_shortcode');
           echo do_shortcode( $shortcode );
+          }
         ?>
       </div>
     </div>
