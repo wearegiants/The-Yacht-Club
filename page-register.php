@@ -16,8 +16,8 @@
 		'post_parent'      => 407,
 		'order'            => 'ASC',
 		'orderby'          => 'title',
-		'post_status'			=> 'publish',
-		'has_password'		=> false,
+		'post_status'			 => 'publish',
+		//'has_password'		=> false,
 		'caller_get_posts' => 1,
 		'meta_query'       => array(
 			array(
