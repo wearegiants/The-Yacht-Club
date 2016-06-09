@@ -1,6 +1,6 @@
 <?php $titleSponsor = get_field('special_sponsors'); ?>
 <?php if ($titleSponsor): ?>
-<h3 class="section-title">Title Sponsor</h3>
+<h3 class="section-title"><?php the_field('title_sponsor_title'); ?></h3>
 <div class="section-description"><?php the_field('title_sponsor_description'); ?></div>
 <div class="title-sponsor-section"><?php the_field('title_sponsor'); ?></div>
 <?php endif; ?>
