@@ -7,7 +7,13 @@
 
 <?php $sponsorTitle = get_field('sponsor_title_primary'); ?>
 
-<h3 class="section-title"><?php if($sponsorTitle) { echo $sponsorTitle; } else { echo 'Sponsor' } ?></h3>
+<h3 class="section-title"><?php 
+  if ($sponsorTitle) { 
+    echo $sponsorTitle; 
+  } else { 
+    echo 'Sponsor'; 
+  };
+  ?></h3>
 <div class="section-description"><?php the_field('sponsor_description'); ?></div>
 
 <?php $images = get_field('sponsors'); if( $images ): ?>
