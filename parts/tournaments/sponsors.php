@@ -5,7 +5,7 @@
 <div class="title-sponsor-section"><?php the_field('title_sponsor'); ?></div>
 <?php endif; ?>
 
-<h3 class="section-title">Sponsors</h3>
+<h3 class="section-title"><?php the_field('sponsor_title_primary'); ?></h3>
 <div class="section-description"><?php the_field('sponsor_description'); ?></div>
 
 <?php $images = get_field('sponsors'); if( $images ): ?>
