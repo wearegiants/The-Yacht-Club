@@ -51,6 +51,9 @@ $(function(){
       }
   };
 
-  var banner = new Headhesive('.page-subnav', options);
+
+  if ( $( ".page-subnav" ).length ) {
+    var banner = new Headhesive('.page-subnav', options);
+  }
 
 });
