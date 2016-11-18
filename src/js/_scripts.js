@@ -22,7 +22,8 @@ $(function(){
   // Dropdown
 
   $("select").dropdown({
-    customClass: 'dropdown-menu'
+    customClass: 'dropdown-menu',
+    mobile: false,
   });
 
   // Popup
