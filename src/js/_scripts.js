@@ -21,7 +21,7 @@ $(function(){
 
   // Dropdown
 
-  $("select").dropdown({
+  $("select:not(.gform_body select)").dropdown({
     customClass: 'dropdown-menu',
     mobile: false,
   });
