@@ -5,7 +5,7 @@
 <div class="title-sponsor-section"><?php the_field('title_sponsor'); ?></div>
 <?php endif; ?>
 
-<?php $sponsorTitle = get_field('sponsor_title'); ?>
+<?php $sponsorTitle = get_field('sponsor_titles'); ?>
 
 <h3 class="section-title"><?php 
   if ($sponsorTitle) { 
